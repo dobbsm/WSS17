@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    169348,       3673]
-NotebookOptionsPosition[    166673,       3605]
-NotebookOutlinePosition[    167028,       3621]
-CellTagsIndexPosition[    166985,       3618]
+NotebookDataLength[    169846,       3686]
+NotebookOptionsPosition[    167171,       3618]
+NotebookOutlinePosition[    167526,       3634]
+CellTagsIndexPosition[    167483,       3631]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -86,6 +86,16 @@ Cell[BoxData[
   "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
+    RowBox[{"l", " ", "=", " ", "5"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+     RowBox[{"type", " ", "of", " ", "scale"}], ",", " ", 
+     RowBox[{
+      RowBox[{"i", ".", "e", ".", " ", "5"}], " ", "=", " ", "pentatonic"}], 
+     ",", " ", 
+     RowBox[{"12", " ", "=", " ", "chromatic"}]}], "*)"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
     RowBox[{
      RowBox[{"rule", "[", 
       RowBox[{"rulenumber_", ",", "n_"}], "]"}], ":=", 
@@ -94,10 +104,11 @@ Cell[BoxData[
        RowBox[{"Tuples", "[", 
         RowBox[{
          RowBox[{"Range", "[", 
-          RowBox[{"0", ",", "11"}], "]"}], ",", "n"}], "]"}], "\[Rule]", 
+          RowBox[{"0", ",", 
+           RowBox[{"l", "-", "1"}]}], "]"}], ",", "n"}], "]"}], "\[Rule]", 
        RowBox[{"IntegerDigits", "[", 
-        RowBox[{"rulenumber", ",", "12", ",", 
-         RowBox[{"12", "^", "n"}]}], "]"}]}], "]"}]}], ";"}], 
+        RowBox[{"rulenumber", ",", "l", ",", 
+         RowBox[{"l", "^", "n"}]}], "]"}]}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
@@ -154,7 +165,8 @@ Cell[BoxData[
      RowBox[{"Tuples", "[", 
       RowBox[{
        RowBox[{"Range", "[", 
-        RowBox[{"0", ",", "11"}], "]"}], ",", "n"}], "]"}]}], ";"}], 
+        RowBox[{"0", ",", 
+         RowBox[{"l", "-", "1"}]}], "]"}], ",", "n"}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{"Set", " ", "of", " ", "all", " ", "initial", " ", "conditions"}],
@@ -346,10 +358,11 @@ Cell[BoxData[
    3.708201914648272*^9}, {3.708203509286891*^9, 3.70820351986718*^9}, 
    3.7082040550015907`*^9, {3.708211723971924*^9, 3.7082117326414833`*^9}, {
    3.7082129843705587`*^9, 3.708213013486466*^9}, {3.708213569567691*^9, 
-   3.708213628094819*^9}, {3.708255778064205*^9, 3.708255780618989*^9}},
+   3.708213628094819*^9}, {3.708255778064205*^9, 3.708255780618989*^9}, {
+   3.708268664703264*^9, 3.708268699794742*^9}},
  Background->RGBColor[
   0.87, 0.94, 1],ExpressionUUID->"0df0b326-e5ae-466a-b1e9-272a351fd95a"]
-}, Closed]],
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{
@@ -1566,7 +1579,7 @@ Cell[BoxData[{
    3.708125940196748*^9}},
  Background->RGBColor[
   0.87, 0.94, 1],ExpressionUUID->"ca8107b6-199f-4314-8138-9372490d53a1"]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -3629,49 +3642,49 @@ Cell[CellGroupData[{
 Cell[2228, 56, 508, 8, 51, "Subtitle", "ExpressionUUID" -> \
 "c761ef2b-7bee-4046-aa89-e0f8c594b6df",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
-Cell[2739, 66, 15882, 284, 595, "Input", "ExpressionUUID" -> \
+Cell[2739, 66, 16380, 297, 658, "Input", "ExpressionUUID" -> \
 "0df0b326-e5ae-466a-b1e9-272a351fd95a",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}]
-}, Closed]],
-Cell[18636, 353, 1266, 28, 69, "Input", "ExpressionUUID" -> \
+}, Open  ]],
+Cell[19134, 366, 1266, 28, 75, "Input", "ExpressionUUID" -> \
 "7b671ab2-faec-4ff4-bc2c-2c135a8ae044"],
-Cell[19905, 383, 525, 16, 54, "Input", "ExpressionUUID" -> \
+Cell[20403, 396, 525, 16, 54, "Input", "ExpressionUUID" -> \
 "43fd65f3-d0c7-4c5d-8905-cb16059eab69"],
-Cell[20433, 401, 520, 14, 54, "Input", "ExpressionUUID" -> \
+Cell[20931, 414, 520, 14, 54, "Input", "ExpressionUUID" -> \
 "29c11a80-de99-4357-82f0-bd7e23ae9fd7"],
 Cell[CellGroupData[{
-Cell[20978, 419, 461, 8, 51, "Subtitle", "ExpressionUUID" -> \
+Cell[21476, 432, 461, 8, 51, "Subtitle", "ExpressionUUID" -> \
 "77c44f44-9290-4925-b77a-e3a11616ee11",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}],
-Cell[21442, 429, 26162, 599, 2191, "Input", "ExpressionUUID" -> \
+Cell[21940, 442, 26162, 599, 2191, "Input", "ExpressionUUID" -> \
 "9a05e07d-e057-4876-8ec6-9b486d390e09",
  CellGroupingRules->{"GroupTogetherGrouping", 10001.}]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[47641, 1033, 482, 8, 51, "Subtitle", "ExpressionUUID" -> \
+Cell[48139, 1046, 482, 8, 51, "Subtitle", "ExpressionUUID" -> \
 "3f3d2dec-e29b-4801-b6c0-d0241dea111b",
  CellGroupingRules->{"GroupTogetherGrouping", 10002.}],
-Cell[48126, 1043, 15626, 317, 847, "Input", "ExpressionUUID" -> \
+Cell[48624, 1056, 15626, 317, 847, "Input", "ExpressionUUID" -> \
 "25b5e6b1-f024-4b3c-8674-0d43ec35a144",
  CellGroupingRules->{"GroupTogetherGrouping", 10002.}]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[63789, 1365, 300, 4, 51, "Subtitle", "ExpressionUUID" -> \
+Cell[64287, 1378, 300, 4, 51, "Subtitle", "ExpressionUUID" -> \
 "428f67ca-dc51-4be0-b920-725cf29ab43a",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}],
-Cell[64092, 1371, 10831, 196, 658, "Input", "ExpressionUUID" -> \
+Cell[64590, 1384, 10831, 196, 658, "Input", "ExpressionUUID" -> \
 "ca8107b6-199f-4314-8138-9372490d53a1",
  CellGroupingRules->{"GroupTogetherGrouping", 10000.}]
-}, Open  ]],
+}, Closed]],
 Cell[CellGroupData[{
-Cell[74960, 1572, 204, 4, 32, "Input", "ExpressionUUID" -> \
+Cell[75458, 1585, 204, 4, 26, "Input", "ExpressionUUID" -> \
 "e75f3390-b52d-4254-99bf-8b3e075ad967"],
-Cell[75167, 1578, 7513, 131, 257, "Output", "ExpressionUUID" -> \
+Cell[75665, 1591, 7513, 131, 257, "Output", "ExpressionUUID" -> \
 "79cdc04f-8002-4c0a-afcd-af79ce44b8c4"],
 Cell[CellGroupData[{
-Cell[82705, 1713, 181, 3, 24, "Print", "ExpressionUUID" -> \
+Cell[83203, 1726, 181, 3, 24, "Print", "ExpressionUUID" -> \
 "eb2cf048-62de-4fd1-ae48-1605b23b3533"],
-Cell[82889, 1718, 83756, 1883, 210, "Print", "ExpressionUUID" -> \
+Cell[83387, 1731, 83756, 1883, 210, "Print", "ExpressionUUID" -> \
 "87281fb7-c81e-4a55-a9fd-7a2ff8b4d10d"]
 }, Open  ]]
 }, Open  ]]
